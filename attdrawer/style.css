@@ -1,0 +1,88 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.drawer-container {
+    position: relative;
+}
+
+.drawer {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: #f8f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.drawer-content h2 {
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    color: #d61e3d;
+    font-size: 30px;
+}
+
+.drawer.open {
+    left: 0;
+}
+
+.drawer-content ul {
+    padding: 30px;
+}
+
+.drawer-toggle {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #f9b4ff;
+    color: rgb(143, 7, 143);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1001;
+}
+
+.drawer-content li {
+    margin-bottom: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+.drawer-content li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('moranguinho/download-removebg-preview\ \(20\).png');
+    background-size: cover;
+}
+
+.drawer-toggle:hover {
+    color: #f3cfe7;
+    background-color: #b31398;
+}
+
+.hide {
+    display: none;
+}
+
+  
+    
+  
+  
